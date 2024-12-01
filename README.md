@@ -30,7 +30,7 @@ The application features an **interactive community platform**, allowing farmers
 
 ### Disease Treatment Catalog
 
-![ipeline.png](pipeline.png)
+![pipeline.png](./Leaf%20doctor%20AI/pipeline.png)
 
 The treatment catalog is built using an innovative data and machine learning pipeline:
 
