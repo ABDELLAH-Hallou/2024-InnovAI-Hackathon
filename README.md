@@ -19,8 +19,8 @@ The application features an **interactive community platform**, allowing farmers
 ### Details
 
 - **Demo video**: https://drive.google.com/file/d/1mAf_qeB694fuSzBSajYx9JA32QYdnPZg/view?usp=drive_link
-- **Presentation**: https://drive.google.com/file/d/1b79WftATKf4Zd9wmvk7ExonRcXEMc-oS/view?usp=drive_link
-- **Pitch Video**:
+- **Pitch deck PDF**: https://drive.google.com/file/d/1b79WftATKf4Zd9wmvk7ExonRcXEMc-oS/view?usp=drive_link
+- **Pitch Video**: https://drive.google.com/file/d/1NMVEX-JmL7dpSUuRHTUWh5CW7mzEI2KL/view?usp=sharing
 - **Landing Page:** [https://leaf-doctor-page.onrender.com/](https://leaf-doctor-page.onrender.com/)
 - **A video you should watch**: https://drive.google.com/file/d/1D0vMCeYXvd201EMgM7ApDC7FBIrrA31R/view?usp=drive_link
 
