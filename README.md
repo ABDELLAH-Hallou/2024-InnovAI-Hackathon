@@ -1,25 +1,47 @@
-# About The Hackathon
-The MoroccoAI InnovAI Hackathon is a unique opportunity for AI enthusiasts, professionals, and innovators to collaborate and create transformative AI-based solutions addressing real-life challenges in Morocco and across Africa. As part of the annual MoroccoAI Annual Conference, this hackathon is set under the theme “Driving the Future of Innovation Through AI”, inspiring participants to harness AI’s capabilities to make a meaningful societal impact. Participants will join teams to develop Proof of Concepts (PoCs) using applications or APIs that address challenges in various domains. Education, Healthcare, Environment, Finance or Customer Services .
+### Background and Problem Statement
 
-In line with MoroccoAI’s mission, this hackathon centers around “Driving the Future of Innovation Through AI”. AI has the power to redefine industries, address community needs, and propel sustainable growth. Through this event, participants will dive into AI’s potential by developing impactful solutions that address challenges unique to Morocco and Africa in fields such as agriculture, education, health, and finance, fostering innovation in response to real-world needs.
+Agriculture is vital to global food security, yet plant diseases are a major challenge, causing significant losses annually. In Morocco, where agriculture supports 80% of the rural population and contributes 14% to the GDP [[1]](https://www.agriculture.gov.ma/sites/default/files/investors_guide_in_the_agricultural_sector_in_morocco.pdf), farmers face up to 50% [[2]](https://www.fao.org/plant-production-protection/about/en) crop loss due to diseases detected through traditional, error-prone visual inspections. These methods are costly and inefficient, particularly for small-scale farmers.
 
-# The Challenge
-Connect with the MoroccoAI community, join teams and brainstorm ideas then come up with a project that leverages AI in 5 areas of focus:
-* Innovation
-* Healthcare
-* Environment
-* Finance
-* CustomerServices
+### Impact and Proposed Solution
 
-# Mentorship
-Join the Hackathon server on discord and meet the mentors to learn more about their proposed projects.
+The **Leaf Doctor AI** application uses artificial intelligence, to detect plant diseases. Farmers can photograph plants, receive diagnoses, and access tailored treatment suggestions. Leaf Doctor AI minimizes crop losses and promotes sustainable agriculture by enabling early detection.
 
-# Why should you participate in this Hackathon?
-* Hands-on experience in AI project development that targets relevant issues in Morocco and Africa.
-* Mentorship and networking opportunities with experts and peers in the AI community.
-* Showcase their solutions to a jury of AI specialists at the awards ceremony, creating visibility and opportunities for further development.
-* Win great prizes offered by MoroccoAI's sponsors
-* Obtain your MoroccoAI certificate of recognition
+The application features an **interactive community platform**, allowing farmers to share insights and advice, and an **intelligent disease treatment catalog** generated through advanced data pipelines and machine learning.
 
-# For more information
-https://morocco.ai/events/conferences/MoroccoAI-Conference-2024/pages/hackathon.html
+### Project Outcomes and Deliverables
+
+- **Disease Detection**: Accurate diagnosis and classification of plant diseases.
+- **Treatment Catalog**: Comprehensive database of diseases and recommended treatments (still not released yet).
+- **Data Logging**: Save and monitor plant health diagnostics over time.
+- **Interactive Farmer Community**: A Stack Overflow-like forum for knowledge exchange.
+- **Scalable and User-Friendly**: Android and iOS compatibility with an intuitive interface.
+
+### Details
+
+- **Demo video**: https://drive.google.com/file/d/1mAf_qeB694fuSzBSajYx9JA32QYdnPZg/view?usp=drive_link
+- **Presentation**: https://drive.google.com/file/d/1b79WftATKf4Zd9wmvk7ExonRcXEMc-oS/view?usp=drive_link
+- **Pitch Video**:
+- **Landing Page:** [https://leaf-doctor-page.onrender.com/](https://leaf-doctor-page.onrender.com/)
+- **A video you should watch**: https://drive.google.com/file/d/1D0vMCeYXvd201EMgM7ApDC7FBIrrA31R/view?usp=drive_link
+
+---
+
+### Advanced Features
+
+### Disease Treatment Catalog
+
+![ipeline.png](pipeline.png)
+
+The treatment catalog is built using an innovative data and machine learning pipeline:
+
+1. **Data Pipeline**:
+    - **Web Scraping**: Public agricultural data is scraped using Airflow and stored in a MongoDB database.
+    - **Data Storage**: The scraped data is structured and stored for processing.
+2. **ML Pipeline**:
+    - **Chunking**: Text data is divided into manageable sections using LangChain.
+    - **Sentiment Analysis**: Sentiment-RoBERTa-Large-English identifies sentiment polarity in each chunk.
+    - **Named Entity Recognition (NER)**: UniversalNER extracts key entities like plant names, diseases, and chemicals.
+    - **Word Embedding**: Entities are converted into embeddings using Word2Vec.
+    - **Vector Database**: Qdrant matches entity embeddings to retrieve related content.
+    - **Linking**: An LLM uses the retrieved content, entities, and sentiments to summarize each chunk concisely.
+    - **Storage**: Summaries are saved back into the vector database for future queries.
